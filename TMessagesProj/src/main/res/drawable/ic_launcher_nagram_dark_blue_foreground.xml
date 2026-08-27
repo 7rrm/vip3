@@ -4,18 +4,33 @@
     android:height="108dp"
     android:viewportWidth="512"
     android:viewportHeight="512">
-  <!-- v171: clean flat letter M, white on blue rim (bat-capsule removed) -->
-  <group android:scaleX="0.6405882" android:scaleY="0.6405882" android:translateX="92.009415" android:translateY="92.009415">
-    <group>
-      <clip-path android:pathData="M0 0H512V512H0V0Z"/>
-      <path android:pathData="M86 150H150V362H86Z" android:fillColor="#0095ff" android:strokeColor="#0095ff" android:strokeWidth="40" android:strokeLineJoin="round"/>
-      <path android:pathData="M362 150H426V362H362Z" android:fillColor="#0095ff" android:strokeColor="#0095ff" android:strokeWidth="40" android:strokeLineJoin="round"/>
-      <path android:pathData="M94.7 172L232.7 318L279.3 274L141.3 128Z" android:fillColor="#0095ff" android:strokeColor="#0095ff" android:strokeWidth="40" android:strokeLineJoin="round"/>
-      <path android:pathData="M370.7 128L232.7 274L279.3 318L417.3 172Z" android:fillColor="#0095ff" android:strokeColor="#0095ff" android:strokeWidth="40" android:strokeLineJoin="round"/>
-      <path android:pathData="M86 150H150V362H86Z" android:fillColor="#fff"/>
-      <path android:pathData="M362 150H426V362H362Z" android:fillColor="#fff"/>
-      <path android:pathData="M94.7 172L232.7 318L279.3 274L141.3 128Z" android:fillColor="#fff"/>
-      <path android:pathData="M370.7 128L232.7 274L279.3 318L417.3 172Z" android:fillColor="#fff"/>
+    <!-- Letter K with white fill + blue stroke border -->
+    <group android:scaleX="0.6405882" android:scaleY="0.6405882" android:translateX="92.009415" android:translateY="92.009415">
+        <group>
+            <clip-path android:pathData="M0 0H512V512H0V0Z"/>
+            
+            <!-- ======== الطبقة الخلفية البيضاء (fill) ======== -->
+            <!-- العامود الرأسي -->
+            <path android:pathData="M120 128H190V384H120Z" android:fillColor="#FFFFFF"/>
+            
+            <!-- الفرع المائل العلوي والسفلي -->
+            <path android:pathData="M300 128L200 256L300 384H400L280 256L400 128Z" android:fillColor="#FFFFFF"/>
+            
+            <!-- ======== الطبقة الأمامية (إطار أزرق - stroke فقط) ======== -->
+            <!-- العامود الرأسي -->
+            <path android:pathData="M120 128H190V384H120Z" 
+                  android:strokeWidth="20" 
+                  android:fillColor="#00000000" 
+                  android:strokeColor="#0095FF"
+                  android:strokeLineJoin="round"/>
+            
+            <!-- الفرع المائل العلوي والسفلي -->
+            <path android:pathData="M300 128L200 256L300 384H400L280 256L400 128Z" 
+                  android:strokeWidth="20" 
+                  android:fillColor="#00000000" 
+                  android:strokeColor="#0095FF"
+                  android:strokeLineJoin="round"/>
+            
+        </group>
     </group>
-  </group>
 </vector>
