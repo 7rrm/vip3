@@ -4,14 +4,17 @@
     android:height="108dp"
     android:viewportWidth="512"
     android:viewportHeight="512">
-  <!-- v171: clean flat letter M, darkgreen whites; diagonals UNDER stems -->
-  <group android:scaleX="0.6713793" android:scaleY="0.6713793" android:translateX="84.1269" android:translateY="84.1269">
-    <group>
-      <clip-path android:pathData="M0 0H512V512H0V0Z"/>
-      <path android:pathData="M94.7 172L232.7 318L279.3 274L141.3 128Z" android:fillColor="#FFFFFF"/>
-      <path android:pathData="M370.7 128L232.7 274L279.3 318L417.3 172Z" android:fillColor="#FFFFFF"/>
-      <path android:pathData="M86 150H150V362H86Z" android:fillColor="#E6FFFFFF"/>
-      <path android:pathData="M362 150H426V362H362Z" android:fillColor="#E6FFFFFF"/>
+    <!-- Letter K in white/transparent white style -->
+    <group android:scaleX="0.6713793" android:scaleY="0.6713793" android:translateX="84.1269" android:translateY="84.1269">
+        <group>
+            <clip-path android:pathData="M0 0H512V512H0V0Z"/>
+            
+            <!-- ======== العمود الرأسي لـ K (أبيض شفاف) ======== -->
+            <path android:pathData="M120 128H190V384H120Z" android:fillColor="#E6FFFFFF"/>
+            
+            <!-- ======== الفرع المائل العلوي (أبيض صلب) ======== -->
+            <path android:pathData="M300 128L200 256L300 384H400L280 256L400 128Z" android:fillColor="#FFFFFF"/>
+            
+        </group>
     </group>
-  </group>
 </vector>
